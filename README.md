@@ -67,3 +67,25 @@
 
 
 [Download/View Video](3D_printer.mp4)
+
+## Challenges Faced
+
+### 1. Real-Time Data Simulation
+- **Issue**: Generating realistic mock data for printer status (e.g., extruder temperature, bed temperature, print progress) required careful randomization to mimic real-world behavior.  
+- **Solution**: Implemented a backend API with dynamic data ranges and randomized values to simulate real-time updates.
+
+### 2. Frontend-Backend Integration
+- **Issue**: Ensuring seamless communication between the frontend (HTML/CSS/JavaScript) and backend (Node.js/Express) for real-time dashboard updates.  
+- **Solution**: Used `fetch` API for asynchronous data polling and updated the DOM dynamically to reflect changes without page reloads.
+
+### 3. Error Handling
+- **Issue**: Handling edge cases like printer disconnections or invalid data inputs.  
+- **Solution**: Added error-checking in the backend API and user-friendly alerts on the frontend.
+
+## How Challenges Were Overcome
+
+### Independent Problem-Solving
+- **Self-Reliance**: As a solo developer, I tackled challenges by breaking them into smaller tasks and prioritizing them based on impact and complexity.
+### Documentation & Learning
+- **Code Comments**: Added detailed inline comments to simplify future debugging and maintenance.  
+- **Learning Curve**: Invested time in learning new tools (e.g., Chart.js for graphs) through tutorials and practice.  
